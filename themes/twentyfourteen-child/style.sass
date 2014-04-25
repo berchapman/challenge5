@@ -1,0 +1,106 @@
+$sidebar: rgb(35,32,63) //25,39,88
+$bikedude: rgb(253,198,98)
+$active: rgb(247,97,72)
+
+body
+	font-family: Helvetica
+	background-color: white
+
+div#main.site-main
+	@media (min-width:1000px)
+		width: 1500px
+
+
+#primary-sidebar
+	background-color: $sidebar
+
+#secondary
+	background-color: $sidebar
+	padding-top: 15px
+
+.site:before
+	background-color: $sidebar
+
+div.header-main
+	background-color: $sidebar
+
+.site-footer
+	background-color: $sidebar
+
+.search-toggle
+	background-color: $bikedude
+
+.search-toggle:hover
+	background-color: $active
+
+.search-toggle.active
+	background-color: $active
+
+.search-box
+	background-color: $active
+
+div.nav-menu
+	background-color: $bikedude
+	margin-right: 60px
+
+div.nam-menu:hover *
+	background-color: $active !important
+
+li.page_item.page-item-35
+	background-color: $bikedude
+
+li.page_item.page-item-35:hover
+	background-color: $active !important
+
+li.page_item.page-item-35::selection
+	background-color: $active !important
+
+.site-navigation a
+	color: $sidebar
+
+::selection
+	background: $active
+	color: $sidebar
+	text-shadow: none
+
+::-moz-selection
+	background: $active
+	color: $sidebar
+	text-shadow: none
+
+html body.home div#page.hfeed header#masthead.site-header div.header-main nav#primary-navigation.site-navigation div.nav-menu ul li.page_item a:hover
+	background-color: $active
+
+html body.page div#page.hfeed header#masthead.site-header div.header-main nav#primary-navigation.site-navigation div.nav-menu ul li.page_item a:hover
+	background-color: $active
+	color: $sidebar
+
+.site-navigation .current_page_item > a, .site-navigation .current_page_ancestor > a, .site-navigation .current-menu-item > a, .site-navigation .current-menu-ancestor > a
+	color: $sidebar
+	font-weight: 900
+
+.header-main
+	//width: 100%
+	background: url(images/bikeflip_lg.png)
+
+footer#colophon.site-footer
+	//width: 100%
+	background: url(images/bikeflip_lg.png)
+
+.lytbox
+	background-color: rgba(20,20,20,0.65)
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 999
+
+.lytContainer
+	height: 400px
+	width: 400px
+	position: relative
+	left: 50%
+	top: 10px
+	max-width: 400px
+	max-height: 400px
+	z-index: 1000
+	border: 2px solid $active
